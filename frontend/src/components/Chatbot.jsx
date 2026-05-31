@@ -35,7 +35,7 @@ export default function Chatbot({ taxResult }) {
     setLoading(true);
 
     try {
-      const res = await axios.post('/api/chat', {
+      const res = await axios.post('https://tax-transparency-tracker.onrender.com/api/chat', {
         question: q,
         taxContext: taxResult,
       });
