@@ -1,0 +1,16 @@
+{
+  "name": "tax-transparency-tracker",
+  "version": "1.0.0",
+  "description": "AI-powered civic web app showing Indian citizens where their taxes go",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}
