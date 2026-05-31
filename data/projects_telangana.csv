@@ -1,0 +1,13 @@
+project_id,name,sector,state,budget,spent,completion,months_active,vendor_repeat_count,status
+1,NH-44 Widening Pkg 3B,infrastructure,Telangana,2800,2400,18,8,2,ongoing
+2,PM Awas Yojana Warangal,social_welfare,Telangana,1200,1100,53,28,1,stalled
+3,Rural Health Sub-Centres Nizamabad,healthcare,Telangana,340,310,91,18,7,ongoing
+4,ICDS Centres Adilabad,social_welfare,Telangana,180,160,0,12,0,stalled
+5,Kurnool Solar Phase 2,infrastructure,Andhra Pradesh,900,1100,72,20,1,completed
+6,District Hospital Khammam,healthcare,Telangana,420,380,90,22,1,ongoing
+7,PMGSY Roads Nalgonda,rural_dev,Telangana,250,240,95,14,1,completed
+8,Jal Jeevan Mission Nalgonda,rural_dev,Telangana,850,430,51,18,1,ongoing
+9,AIIMS Hyderabad,healthcare,Telangana,2000,1800,90,30,2,ongoing
+10,Hyderabad Metro Phase 2,infrastructure,Telangana,14400,8200,57,24,1,ongoing
+11,PM POSHAN Mid-Day Meal,education,Telangana,280,270,96,36,1,ongoing
+12,IIIT Hyderabad Expansion,education,Telangana,500,280,56,20,1,ongoing
