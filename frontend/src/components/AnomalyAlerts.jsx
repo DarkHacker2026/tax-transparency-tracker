@@ -55,7 +55,7 @@ export default function AnomalyAlerts() {
 
   useEffect(() => {
     // Try to fetch from backend; fall back to mock data
-    axios.get('/api/anomalies', { timeout: 3000 })
+    axios.get('https://tax-transparency-tracker.onrender.com/api/anomalies', { timeout: 3000 })
       .then(res => setAnomalies(res.data))
       .catch(() => setAnomalies(MOCK_ANOMALIES))
       .finally(() => setLoading(false));
