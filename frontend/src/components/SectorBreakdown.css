@@ -1,0 +1,82 @@
+.breakdown-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.chart-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-center {
+  position: absolute;
+  text-align: center;
+  pointer-events: none;
+}
+
+.chart-center-val {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.chart-center-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.sector-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sector-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  cursor: default;
+}
+.sector-item:hover,
+.sector-item.active {
+  background: var(--bg-card2);
+  border-color: var(--sector-color, var(--border));
+}
+
+.sector-icon { font-size: 20px; min-width: 28px; text-align: center; }
+
+.sector-info { flex: 1; }
+.sector-name { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+.sector-desc { font-size: 11px; color: var(--text-muted); margin-bottom: 6px; }
+
+.sector-bar-wrap {
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.sector-bar {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.8s ease;
+}
+
+.sector-amounts { text-align: right; min-width: 90px; }
+.sector-amount { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--text); }
+.sector-pct { font-size: 11px; color: var(--text-muted); }
+
+@media (max-width: 800px) {
+  .breakdown-layout { grid-template-columns: 1fr; }
+  .chart-wrap { max-width: 240px; margin: 0 auto; }
+}
