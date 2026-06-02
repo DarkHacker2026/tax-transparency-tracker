@@ -10,7 +10,9 @@
     "coverage": "npm --prefix backend run coverage && npm --prefix frontend run coverage && node scripts/run-ml-tests.js"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "eslint": "^8.0.0",
+    "knip": "^3.0.0"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1"
