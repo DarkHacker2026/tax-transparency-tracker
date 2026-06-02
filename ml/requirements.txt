@@ -6,3 +6,5 @@ spacy==3.7.2
 psycopg2-binary==2.9.9
 python-dotenv==1.0.0
 requests==2.31.0
+pytest==8.2.2
+pytest-cov==5.0.0
