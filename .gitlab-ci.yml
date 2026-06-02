@@ -1,7 +1,9 @@
 stages:
   - test
 
-dummy_test:
+compliance_checks:
   stage: test
   script:
-    - echo "Passing CI for compliance"
+    - echo "Running compliance"
+    - npm audit
+    - gitleaks detect
