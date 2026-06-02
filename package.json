@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "cd backend && npm run dev",
-    "frontend": "cd frontend && npm start"
+    "frontend": "cd frontend && npm start",
+    "test": "npm --prefix backend test && npm --prefix frontend test && node scripts/run-ml-tests.js",
+    "coverage": "npm --prefix backend run coverage && npm --prefix frontend run coverage && node scripts/run-ml-tests.js"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
